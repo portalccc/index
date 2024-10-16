@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics início -->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MVM65KTJ');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics fim -->
+
+  <title> Painel Gestão à Vista CCC | Portal CCC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informações sobre o Portal CCC - Central de Compras Compartilhadas" />
+  <meta name="keywords" content="O que é Central de Compras Compartilhadas, CCC, SEPLAG MG, Compras Públicas" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    .w3-third img{margin-bottom: -6px; cursor: pointer}
+    .w3-third img:hover{opacity: 0.6; transition: 0.3s}
+
+    .container {
+      text-align: center;
+    }
+
+    .myUL {
+      display: inline-block;
+      text-align: left;
+    }
+
+    .resp-container {
+      width: 100%;
+      height: calc(100vh - 120px); /* Altura da visualização menos a altura do menu e espaço do footer */
+      margin-top: 80px; /* Espaço para o top menu */
+    }
+
+    .resp-iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+    }
+
+    .w3-top {
+      z-index: 2;
+      position: fixed;
+      width: 100%;
+      top: 0;
+    }
+  </style>
+
+</head>
+
+<!-- Sidebar /menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">Fechar</a> 
+  <a href="/index/sobre.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Sobre</a>
+  <a href="/index/" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Início</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-padding w3-card w3-wide">
+    <div class="w3-button w3-padding-16 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></div>
+    <div class="w3-padding-16"><b>C C C</b> CENTRAL DE COMPRAS COMPARTILHADAS</div>
+  </div>
+</div>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVM65KTJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Responsivo do painel PowerBI -->
+  <div class="resp-container">
+    <iframe class="resp-iframe" src="https://app.powerbi.com/view?r=eyJrIjoiMDIxYzNhZTYtYWNkNS00OWM4LWJmMWYtYWI0NWM5NmQyZWUwIiwidCI6ImU1ZDNhZTdjLTliMzgtNDhkZS1hMDg3LWY2NzM0YTI4NzU3NCJ9">
+        Utilize outro browser.
+    </iframe>
+  </div>
+
+  <!-- INÍCIO DO FOOTER -->
+  <footer>
+    <p class="w3-medium"><b>P O R T A L</b> C C C </p>
+  </footer>
+  <!-- FIM DO FOOTER -->
+
+  <!-- Script for Sidebar -->
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
